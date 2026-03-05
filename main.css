@@ -53,10 +53,10 @@ body{
     border-radius: 50px;
     position: absolute;
     right: 0;
-    margin-top: 15vh;
-    margin-right: 30vh;
+    margin-top: 150px;
+    margin-right: 200px;
     width: 30%;
-    height: 25vh;
+    height: 200px;
     cursor: pointer;
     font-weight:bolder;
     transition: all 0.5s ease;
@@ -115,7 +115,7 @@ body{
 /*----------------*/
 .shaurm{
     border-bottom: 3px solid white ;
-    height: 75vh;
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
