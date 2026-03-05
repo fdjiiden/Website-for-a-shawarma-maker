@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'Arial';
 }
 body{
     background-color: black;
@@ -62,7 +63,6 @@ body{
 }
 .Block_1t {
     color:#ffd700;
-    font-family: 'Arial';
     font-size: 24px;
     transition: all 0.5s ease;
 }
@@ -86,4 +86,36 @@ body{
     left: 0;
     bottom: 0;
     margin-left: -13%;
+    animation: move 1s;
+}
+.price1{
+    font-size: 22px;
+    position: absolute;
+    text-align: center;
+    color:white;
+    border: 3px solid white;
+    border-radius: 50px;
+    top: 115%;
+    padding: 10px 30px;
+    transition: all 0.2s ease;
+}
+.price1:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+@keyframes move{
+    0%{
+        opacity: 0;
+        rotate: -50deg;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/*----------------*/
+.shaurm{
+    border-bottom: 3px solid white ;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
 }
