@@ -44,7 +44,7 @@ body{
     position: relative;
     overflow: hidden;
 }
-.Block_1 {
+.Block_1, .Block_2, .Block_3 {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -59,24 +59,26 @@ body{
     height: 200px;
     cursor: pointer;
     font-weight:bolder;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
+    animation: movetext 2s;
+    animation-fill-mode: forwards;
 }
 .Block_1t {
     color:#ffd700;
     font-size: 24px;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
 .Block_1t2{
     position: absolute;
     margin-top: 7vh;
     color: black;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
 }
-.Block_1:hover {
+.Block_1:hover, .Block_2:hover,.Block_3:hover {
     background-color: #ffd700;
     border: 10px solid black;
 }
-.Block_1:hover .Block_1t, .Block_1:hover .Block_1t2 {
+.Block_1:hover .Block_1t, .Block_1:hover .Block_1t2, .Block_2:hover .Block_1t, .Block_2:hover .Block_1t2, .Block_3:hover .Block_1t, .Block_3:hover .Block_1t2{
     color: white;
 }
 
@@ -86,7 +88,6 @@ body{
     left: 0;
     bottom: 0;
     margin-left: -13%;
-    animation: move 1s;
 }
 .price1{
     font-size: 22px;
@@ -98,6 +99,9 @@ body{
     top: 115%;
     padding: 10px 30px;
     transition: all 0.2s ease;
+    opacity: 0;
+    animation: movetext 2s;
+    animation-fill-mode: forwards;
 }
 .price1:hover{
     background-color: whitesmoke;
@@ -105,17 +109,58 @@ body{
 }
 @keyframes move{
     0%{
-        opacity: 0;
         rotate: -50deg;
     }
     100%{
         opacity: 100%;
     }
 }
+@keyframes movetext{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.shaurma1, .shaurma2, .shaurma3{
+    animation: move 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
 /*----------------*/
 .shaurm{
-    border-bottom: 3px solid white ;
     height: 400px;
     position: relative;
     overflow: hidden;
+}
+.Block_2{
+    right: 0;
+    margin-top: 100px;
+    margin-right: 320px;
+    width: 25%;
+    height: 150px;
+} 
+.shaurma2 {
+    width: 600px;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    margin-left: -5%;
+}
+
+/*----------------*/
+.Block_3{
+    left: 0;
+    margin-top: 100px;
+    margin-left: 320px;
+    width: 25%;
+    height: 150px;
+} 
+.shaurma3 {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    margin-right: 0%;
 }
