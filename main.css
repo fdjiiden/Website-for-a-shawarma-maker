@@ -18,25 +18,25 @@ body{
     color: #ffd700;
     font-size: 48px;
 }
-.Headiml{
+.Headiml, .Headimr, .basket{
     position: absolute;
+    filter: invert(100%);
+}
+.Headiml{
     left: 0;
     margin-left: 30px;
-    filter: invert(100%);
+}
+.Headimr{
+    right: 0;
+    margin-right: 30px;
 }
 .Headiml img{
     width: 50px;
 }
-.Headimr{
-    position: absolute;
-    right: 0;
-    margin-right: 30px;
-    filter: invert(100%);
-}
+
 .Headimr img{
     width: 50px;
 }
-
 .Vshaurm{
     border-top: 3px solid white ;
     border-bottom: 3px solid white ;
@@ -124,10 +124,8 @@ body{
     }
 }
 .shaurma1, .shaurma2, .shaurma3{
-    animation: move 1s;
-    animation-delay: 0.5s;
+    animation: none;
     opacity: 0;
-    animation-fill-mode: forwards;
 }
 /*----------------*/
 .shaurm{
@@ -163,4 +161,41 @@ body{
     position: absolute;
     right: 0;
     margin-right: 0%;
+}
+
+/*----------------*/
+.basket img{
+    width: 50px;
+}
+.basket{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.basketDIA {
+    left: auto; 
+    position: fixed;
+    right: 20px; 
+    bottom: 30px; 
+    height: 350px;
+    width: 300px;
+    z-index: 1000;
+    animation: movebasket ease 0.1s;
+}
+.basketDIA, .basketDIA button, .basketDIA p{
+    color: black;
+}
+@keyframes movebasket{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
