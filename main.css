@@ -184,12 +184,30 @@ body{
     right: 20px; 
     bottom: 30px; 
     height: 350px;
-    width: 300px;
+    width: 326px;
     z-index: 1000;
     animation: movebasket ease 0.1s;
 }
 .basketDIA, .basketDIA button, .basketDIA p{
     color: black;
+}
+.basketDIA{
+    border-radius: 3%;
+    border-color: black ;
+}
+.basketName{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+}
+.Xbacket{
+    border: none; 
+    background: none; 
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    top: 7px
 }
 @keyframes movebasket{
     0%{
@@ -198,4 +216,7 @@ body{
     100%{
         opacity: 100%;
     }
+}
+.oplata{
+    
 }

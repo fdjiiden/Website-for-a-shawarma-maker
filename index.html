@@ -15,35 +15,35 @@
     </div>
 
     <div class="Vshaurm">
-        <div class="Block_1"> <p class="Block_1t">ШАУРМА ОТ ШЕФА</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">350р</b></div>
+        <div class="Block_1" data-name="Шаурма от Шефа" data-price="350"> <p class="Block_1t">ШАУРМА ОТ ШЕФА</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">350р</b></div>
         <img src="image/shaurma/shaurma.png" class="shaurma1">
     </div>
 
     <div class="shaurm" style="margin-top: 30px;">
-        <div class="Block_2"> <p class="Block_1t">Шаурма Буррито</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
+        <div class="Block_2" data-name="Шаурма Буррито" data-price="250"> <p class="Block_1t">Шаурма Буррито</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
         <img src="image/shaurma/burrito.png" class="shaurma2">
     </div>
     <div class="shaurm">
-        <div class="Block_3"> <p class="Block_1t">Горячий Цыплёнок</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
+        <div class="Block_3" data-name="Горячий Цыплёнок" data-price="250"> <p class="Block_1t">Горячий Цыплёнок</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
         <img src="image/shaurma/chiken.png" class="shaurma3" style="bottom: -80px;">
     </div>
     <div class="shaurm">
-        <div class="Block_2"> <p class="Block_1t">Сочная Свинка</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
+        <div class="Block_2" data-name="Сочная Свинка" data-price="250"> <p class="Block_1t">Сочная Свинка</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
         <img src="image/shaurma/pig.png" class="shaurma2">
     </div>
     <div class="shaurm">
-        <div class="Block_3"> <p class="Block_1t">Шаурма Цезарь</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
+        <div class="Block_3" data-name="Шаурма Цезарь" data-price="250"> <p class="Block_1t">Шаурма Цезарь</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
         <img src="image/shaurma/nagets.png" class="shaurma3" style="bottom: 20px;">
     </div>
     <div class="shaurm">
-        <div class="Block_2"> <p class="Block_1t">Сочная Свинка</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
+        <div class="Block_2" data-name="Хрустящий Баскет" data-price="250"> <p class="Block_1t">Хрустящий Баскет</p> <b class="Block_1t2">Добавить в корзину</b> <b class="price1">250р</b></div>
         <img src="image/shaurma/Doner kebab.png" class="shaurma2" style="margin-left: 0;">
     </div>
 
     <button class="basket" onclick="basketDIA.show()"><img src="image/icon/basket1.png"></button>
     <dialog id="basketDIA" class="basketDIA">
-        <p>Внутренний контент</p>
-        <button onclick="basketDIA.close()">Закрыть</button>
+        <p class="basketName">Корзина</p>
+        <button onclick="basketDIA.close()" class="Xbacket"><img src="image/icon/X.png" style="width: 25px;"></button>
     </dialog>
     <script src="main.js"></script>
 </body>

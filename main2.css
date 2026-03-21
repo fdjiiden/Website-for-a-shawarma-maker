@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.oplata {
+    width: 300px;
+    height: 400px;
+    margin: 13% auto 0 auto; 
+    border: 2px solid black;
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.Oplatit{
+    position: absolute;
+    margin: 300px -67px;
+    border: 2px solid #28a745;
+    background-color: #28a745;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.Oplatit:hover{
+    background: #28a72e;
+    transform: translateY(-2px);
+}
+
+
