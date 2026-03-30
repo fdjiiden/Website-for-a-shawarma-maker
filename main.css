@@ -217,6 +217,55 @@ body{
         opacity: 100%;
     }
 }
-.oplata{
-    
+@media (max-width: 1000px){
+    .Head img{
+        display: none;
+    }
+    .Block_1, .Block_2, .Block_3{
+        margin-top: 150px;
+        margin-right: 20px;
+        min-width: 300px;
+        min-height: 130px;
+    }
+    .Block_3{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .shaurma2, .shaurma3{
+        width: 300px;
+        top: 100px;
+    }
+    .shaurma3{
+        top: 225px
+    }
+    .shaurm{
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+@media (max-width: 600px){
+    .Head img{
+        display: none;
+    }
+    .Block_1, .Block_2, .Block_3{
+        margin-top: 150px;
+        margin-right: 20px;
+        min-width: 300px;
+        min-height: 130px;
+    }
+    .Block_3{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .shaurma2, .shaurma3{
+        width: 200px;
+        top: 200px
+    }
+    .shaurma3{
+        top: 225px
+    }
+    .shaurm{
+        padding-top: 0;
+        margin-top: 0;
+    }
 }
