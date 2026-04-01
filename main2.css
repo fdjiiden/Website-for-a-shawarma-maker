@@ -1,29 +1,282 @@
 *{
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Arial';
+}
+body{
+    background-color: black;
     font-size: 20px;
 }
-.oplata {
-    width: 300px;
-    height: 400px;
-    margin: 13% auto 0 auto; 
-    border: 2px solid black;
-    border-radius: 15px;
-    justify-content: center;
+.Head{
+    z-index: 100000;    
+    margin-bottom: 40px;
+    margin-top: 10px;
     text-align: center;
 }
-.Oplatit{
+.HeadUP{
+    color: #ffd700;
+    font-size: 48px;
+}
+.Headiml, .Headimr, .basket{
     position: absolute;
-    margin: 300px -67px;
-    border: 2px solid #28a745;
-    background-color: #28a745;
-    border-radius: 10px;
-    padding: 10px 20px;
+    filter: invert(100%);
+}
+.Headiml{
+    left: 0;
+    margin-left: 30px;
+}
+.Headimr{
+    right: 0;
+    margin-right: 30px;
+}
+.Headiml img{
+    width: 50px;
+}
+
+.Headimr img{
+    width: 50px;
+}
+.Vshaurm{
+    border-top: 3px solid white ;
+    border-bottom: 3px solid white ;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+}
+.Block_1, .Block_2, .Block_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 10px solid #ffd700;
+    box-sizing: border-box;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    margin-top: 150px;
+    margin-right: 200px;
+    width: 30%;
+    height: 200px;
+    cursor: pointer;
+    font-weight:bolder;
+    transition: all 0.7s ease;
+    animation: movetext 2s;
+    animation-fill-mode: forwards;
+}
+.Block_1t {
+    color:#ffd700;
+    font-size: 24px;
+    transition: all 0.7s ease;
+}
+.Block_1t2{
+    position: absolute;
+    margin-top: 7vh;
+    color: black;
+    transition: all 0.7s ease;
+}
+.Block_1:hover, .Block_2:hover,.Block_3:hover {
+    background-color: #ffd700;
+    border: 10px solid black;
+}
+.Block_1:hover .Block_1t, .Block_1:hover .Block_1t2, .Block_2:hover .Block_1t, .Block_2:hover .Block_1t2, .Block_3:hover .Block_1t, .Block_3:hover .Block_1t2{
+    color: white;
+}
+
+.shaurma1 {
+     width: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -13%;
+}
+.price1{
+    font-size: 22px;
+    position: absolute;
+    text-align: center;
+    color:white;
+    border: 3px solid white;
+    border-radius: 50px;
+    top: 115%;
+    padding: 10px 30px;
+    transition: all 0.2s ease;
+    opacity: 0;
+    animation: movetext 2s;
+    animation-fill-mode: forwards;
+}
+.price1:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+@keyframes move{
+    0%{
+        rotate: -50deg;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes movetext{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.shaurma1, .shaurma2, .shaurma3{
+    animation: none;
+    opacity: 0;
+}
+/*----------------*/
+.shaurm{
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.Block_2{
+    right: 0;
+    margin-top: 100px;
+    margin-right: 320px;
+    width: 25%;
+    height: 150px;
+} 
+.shaurma2 {
+    width: 600px;
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    margin-left: -5%;
+}
+
+/*----------------*/
+.Block_3{
+    left: 0;
+    margin-top: 100px;
+    margin-left: 320px;
+    width: 25%;
+    height: 150px;
+} 
+.shaurma3 {
+    width: 600px;
+    position: absolute;
+    right: 0;
+    margin-right: 0%;
+}
+
+/*----------------*/
+.basket img{
+    width: 50px;
+}
+.basket{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
 }
-.Oplatit:hover{
-    background: #28a72e;
-    transform: translateY(-2px);
+.basketDIA {
+    left: auto; 
+    position: fixed;
+    right: 20px; 
+    bottom: 30px; 
+    height: 350px;
+    width: 326px;
+    z-index: 1000;
+    animation: movebasket ease 0.1s;
 }
-
-
+.basketDIA, .basketDIA button, .basketDIA p{
+    color: black;
+}
+.basketDIA{
+    border-radius: 3%;
+    border-color: black ;
+}
+.basketName{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+}
+.Xbacket{
+    border: none; 
+    background: none; 
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    top: 7px
+}
+@keyframes movebasket{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@media (max-width: 1000px){
+    .Head img{
+        display: none;
+    }
+    .Block_1, .Block_2, .Block_3{
+        margin-top: 150px;
+        margin-right: 20px;
+        min-width: 300px;
+        min-height: 130px;
+    }
+    .Block_3{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .shaurma2, .shaurma3{
+        width: 300px;
+        top: 100px;
+    }
+    .shaurma3{
+        top: 225px
+    }
+    .shaurm{
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
+@media (max-width: 600px){
+    .Head img{
+        display: none;
+    }
+    .Block_1, .Block_2, .Block_3{
+        margin-top: 100px;
+        margin-right: 20px;
+        min-width: 250px;
+        min-height: 130px;
+        top:-70px;
+    }
+    .Block_3{
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+    .shaurma2, .shaurma3{
+        width: 170px;
+        top: 200px
+    }
+    .shaurma3{
+        top: 225px
+    }
+    .shaurm{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .Vshaurm{
+    height: 50vh;
+    }
+    .Block_1t{
+        font-size: 22px;
+    }
+    .Block_1t2{
+        font-size: 16px;
+    }
+    
+}
