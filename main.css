@@ -250,7 +250,7 @@ body{
     .Block_1, .Block_2, .Block_3{
         margin-top: 150px;
         margin-right: 20px;
-        min-width: 300px;
+        min-width: 250px;
         min-height: 130px;
     }
     .Block_3{
@@ -258,7 +258,7 @@ body{
         margin-left: 20px;
     }
     .shaurma2, .shaurma3{
-        width: 200px;
+        width: 170px;
         top: 200px
     }
     .shaurma3{
@@ -267,5 +267,14 @@ body{
     .shaurm{
         padding-top: 0;
         margin-top: 0;
+    }
+    .Vshaurm{
+    height: 50vh;
+    }
+    .Block_1t{
+        font-size: 22px;
+    }
+    .Block_1t2{
+        font-size: 16px;
     }
 }
